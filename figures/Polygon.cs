@@ -47,21 +47,20 @@ namespace figures
             var center = CalculateCenterPoint();
             _points = _points.OrderBy(p => Math.Atan2(p.x - center.x, p.y - center.y)).ToList();
         }
-            
+
         public float CalculateArea()
         {
-            if (_points.Count > 2)
+            if (_points.Count < 3)
+                return 0;
+
+            //shoelace algorithm
+            int cnt = _points.Count;
+            float area = 0;
+            for (int i = 0; i < cnt - 1; i++)
             {
-                //shoelace algorithm
-                int cnt = _points.Count;
-                float area = 0;
-                for (int i = 0; i < cnt - 1; i++)
-                {
-                    area += _points[i].x * _points[i + 1].y - _points[i + 1].x * _points[i].y;
-                }
-                return Math.Abs(area + _points[cnt - 1].x * _points[0].y - _points[0].x * _points[cnt - 1].y) / 2;
+                area += _points[i].x * _points[i + 1].y - _points[i + 1].x * _points[i].y;
             }
-            else return 0;
+            return Math.Abs(area + _points[cnt - 1].x * _points[0].y - _points[0].x * _points[cnt - 1].y) / 2;
         }
     }
     public class Triangle : Polygon
@@ -73,12 +72,7 @@ namespace figures
     {
         public bool CheckCondition(Polygon figure)
         {
-            if (figure.Points.Count == 3)
-            {
-                return true;
-            }
-            else
-                return false;
+            return figure.Points.Count == 3;
         }
     }
 
@@ -87,17 +81,15 @@ namespace figures
         public bool CheckCondition(Polygon figure)
         {
             var cond = new IsValidTriangle();
-            if (cond.CheckCondition(figure))
+            if (!cond.CheckCondition(figure))
+                return false;
+         
+            var angle1 = CalcAngle(figure.Points[0], figure.Points[1], figure.Points[2]);
+            var angle2 = CalcAngle(figure.Points[0], figure.Points[2], figure.Points[1]);
+            var angle3 = CalcAngle(figure.Points[2], figure.Points[1], figure.Points[0]);
+            if (angle1 == 90 || angle2 == 90 || angle3 == 90)
             {
-                var angle1 = CalcAngle(figure.Points[0], figure.Points[1], figure.Points[2]);
-                var angle2 = CalcAngle(figure.Points[0], figure.Points[2], figure.Points[1]);
-                var angle3 = CalcAngle(figure.Points[2], figure.Points[1], figure.Points[0]);
-                if (angle1 == 90 || angle2 == 90 || angle3 == 90)
-                {
-                    return true;
-                }
-                else
-                    return false;
+                return true;
             }
             else
                 return false;
