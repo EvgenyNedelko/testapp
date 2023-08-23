@@ -18,12 +18,13 @@ namespace Figures
             }
 
             this.AddPoint(0, 0);
-            this.AddPoint(0, a);            
+            this.AddPoint(0, a);
             // use cosine theorem to find angle between edges a and b
-            float angle = MathF.Acos((a * a + b * b - c * c) / 2 * a * b);
+            float cos = (a * a + b * b - c * c) / ( 2 * a * b );
+            float angle = MathF.Acos(cos);
             // we need to find a point on circle with radius b and angle 
-            // x = b * cos(angle), y = b * sin(angle)
-            this.AddPoint(b * MathF.Cos(angle), b * MathF.Sin(angle));
+            // y = b * cos(angle), x = b * sin(angle)
+            this.AddPoint(b * MathF.Sin(angle), b * cos);
         }
     }
 
@@ -61,7 +62,8 @@ namespace Figures
             float norm1 = MathF.Sqrt(cPoint1.X * cPoint1.X + cPoint1.Y * cPoint1.Y);
             float norm2 = MathF.Sqrt(cPoint2.X * cPoint2.X + cPoint2.Y * cPoint2.Y);
 
-            return MathF.Acos((cPoint1.X * cPoint2.X + cPoint1.Y * cPoint2.Y) / (norm1 * norm2)) * 180 / MathF.PI;
+            float angle = MathF.Acos((cPoint1.X * cPoint2.X + cPoint1.Y * cPoint2.Y) / (norm1 * norm2)) * 180 / MathF.PI;
+            return MathF.Round(angle, 2);
         }
     }
 }

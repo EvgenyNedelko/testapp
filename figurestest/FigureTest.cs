@@ -46,12 +46,41 @@ namespace Figurestest
         }
 
         [Fact]
+        public void CalculateTriangleArea()
+        {
+            Triangle tri = new(5, 4, 3);
+            
+            Assert.Equal(6, tri.CalculateArea());
+        }
+
+        [Fact]
+        public void CalculateTriangleArea1()
+        {
+            Triangle tri = new(15, 14, 11);
+
+            Assert.Equal(73.48f, MathF.Round(tri.CalculateArea(), 2));
+        }
+
+        [Fact]
+        public void CalculateTriangleArea2()
+        {
+            Triangle tri = new(7, 6, 3);
+
+            Assert.Equal(8.94f, MathF.Round(tri.CalculateArea(), 2));
+        }
+
+        [Fact]
+        public void CheckRightTriangle()
+        {
+            Triangle tri = new(5, 4, 3);
+
+            IsRightTriangle cond = new IsRightTriangle();
+            Assert.True(cond.CheckCondition(tri));
+        }
+        [Fact]
         public void CheckValidTriangle()
         {
-            Triangle tri = new(3, 4, 5);
-            
-            Assert.Equal(12.5, tri.CalculateArea());
-
+            Assert.Throws<ArgumentException>(() => { Triangle tri = new(10, 3, 3); });
         }
     }
 }

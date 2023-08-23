@@ -59,6 +59,7 @@ namespace Figures
             {
                 area += _points[i].X * _points[i + 1].Y - _points[i + 1].X * _points[i].Y;
             }
+        
             return Math.Abs(area + _points[cnt - 1].X * _points[0].Y - _points[0].X * _points[cnt - 1].Y) / 2;
         }
     }
