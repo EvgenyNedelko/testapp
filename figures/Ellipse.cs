@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace figures
+namespace Figures
 {
     public class Ellipse : IFigure
     {
@@ -47,13 +47,6 @@ namespace figures
         }
 
         public float CalculateArea() => _radius1 * _radius2 * MathF.PI;
-    }
-
-    public class Circle : Ellipse
-    {
-        public Circle(float radius) : base(radius, radius) { }
-
-        public Circle(Point origin, float radius) : base(origin, radius, radius) { }
     }
 
     public class IsValidEllipse : IFigureCondition<Ellipse>

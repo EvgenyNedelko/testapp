@@ -8,10 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-using figures;
-using Point = figures.Point;
+using Figures;
+using Point = Figures.Point;
 
-namespace figuresUI
+namespace FiguresUI
 {
     public enum Mode
     {
@@ -118,8 +118,8 @@ namespace figuresUI
         private void UpdateEllipse(PointF point)
         {
             var el = this._current.Figure as Ellipse;
-            el.Radius1 = MathF.Abs(el.Origin.x - point.X);
-            el.Radius2 = MathF.Abs(el.Origin.y - point.Y);
+            el.Radius1 = MathF.Abs(el.Origin.X - point.X);
+            el.Radius2 = MathF.Abs(el.Origin.Y - point.Y);
             var area = el.CalculateArea() * 2.54 / (Graphics.FromHwnd(this.Handle).DpiX * Graphics.FromHwnd(this.Handle).DpiY);
             this.txtArea.Text = area.ToString();
             

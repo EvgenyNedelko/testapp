@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "a38uuYA0KJyuodaPDx6nbn/yHqasQhgW+0bn3olmUbaOIRu9doQo+p4bw4E2Db7pGiTPssEQTLL7gGbBh1XQEQ==",
+  "dgSpecHash": "MxU7czoqcJK5SAG1NbSRtXOB32brY06m1fThlGgffrQUOij1Tv6VAlC6IPRxC4nRHyBV5Era+HPv9XkzaOy4KQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Evgeny Nedelko\\Dev\\testapp\\figurestest\\figurestest.csproj",
+  "projectFilePath": "C:\\Users\\Evgeny Nedelko\\Source\\Repos\\testapp\\figurestest\\FiguresTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Evgeny Nedelko\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
     "C:\\Users\\Evgeny Nedelko\\.nuget\\packages\\microsoft.codecoverage\\16.9.4\\microsoft.codecoverage.16.9.4.nupkg.sha512",

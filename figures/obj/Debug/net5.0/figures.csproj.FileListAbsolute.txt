@@ -10,3 +10,15 @@ C:\Users\Evgeny Nedelko\Dev\testapp\figures\obj\Debug\net5.0\figures.csproj.Core
 C:\Users\Evgeny Nedelko\Dev\testapp\figures\obj\Debug\net5.0\figures.dll
 C:\Users\Evgeny Nedelko\Dev\testapp\figures\obj\Debug\net5.0\ref\figures.dll
 C:\Users\Evgeny Nedelko\Dev\testapp\figures\obj\Debug\net5.0\figures.pdb
+C:\Users\Evgeny Nedelko\Source\Repos\testapp\figures\bin\Debug\net5.0\Figures.deps.json
+C:\Users\Evgeny Nedelko\Source\Repos\testapp\figures\bin\Debug\net5.0\Figures.dll
+C:\Users\Evgeny Nedelko\Source\Repos\testapp\figures\bin\Debug\net5.0\ref\Figures.dll
+C:\Users\Evgeny Nedelko\Source\Repos\testapp\figures\bin\Debug\net5.0\Figures.pdb
+C:\Users\Evgeny Nedelko\Source\Repos\testapp\figures\obj\Debug\net5.0\Figures.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Evgeny Nedelko\Source\Repos\testapp\figures\obj\Debug\net5.0\Figures.AssemblyInfoInputs.cache
+C:\Users\Evgeny Nedelko\Source\Repos\testapp\figures\obj\Debug\net5.0\Figures.AssemblyInfo.cs
+C:\Users\Evgeny Nedelko\Source\Repos\testapp\figures\obj\Debug\net5.0\Figures.csproj.CoreCompileInputs.cache
+C:\Users\Evgeny Nedelko\Source\Repos\testapp\figures\obj\Debug\net5.0\Figures.dll
+C:\Users\Evgeny Nedelko\Source\Repos\testapp\figures\obj\Debug\net5.0\ref\Figures.dll
+C:\Users\Evgeny Nedelko\Source\Repos\testapp\figures\obj\Debug\net5.0\Figures.pdb
+C:\Users\Evgeny Nedelko\Source\Repos\testapp\figures\obj\Debug\net5.0\Figures.csproj.AssemblyReference.cache

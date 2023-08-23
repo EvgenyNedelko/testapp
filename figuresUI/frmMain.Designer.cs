@@ -1,4 +1,4 @@
-﻿namespace figuresUI
+﻿namespace FiguresUI
 {
     partial class frmMain
     {

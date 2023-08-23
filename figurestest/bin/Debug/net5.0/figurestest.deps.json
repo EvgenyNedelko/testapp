@@ -6,16 +6,16 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v5.0": {
-      "figurestest/1.0.0": {
+      "FiguresTest/1.0.0": {
         "dependencies": {
+          "Figures": "1.0.0",
           "Microsoft.NET.Test.Sdk": "16.9.4",
           "coverlet.collector": "3.0.2",
-          "figures": "1.0.0",
           "xunit": "2.4.1",
           "xunit.runner.visualstudio": "2.4.3"
         },
         "runtime": {
-          "figurestest.dll": {}
+          "FiguresTest.dll": {}
         }
       },
       "coverlet.collector/3.0.2": {},
@@ -1090,15 +1090,15 @@
         }
       },
       "xunit.runner.visualstudio/2.4.3": {},
-      "figures/1.0.0": {
+      "Figures/1.0.0": {
         "runtime": {
-          "figures.dll": {}
+          "Figures.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "figurestest/1.0.0": {
+    "FiguresTest/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -1747,7 +1747,7 @@
       "path": "xunit.runner.visualstudio/2.4.3",
       "hashPath": "xunit.runner.visualstudio.2.4.3.nupkg.sha512"
     },
-    "figures/1.0.0": {
+    "Figures/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

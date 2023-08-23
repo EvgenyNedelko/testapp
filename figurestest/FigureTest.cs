@@ -1,9 +1,9 @@
 using Xunit;
 using System;
 
-using figures;
+using Figures;
 
-namespace figurestest
+namespace Figurestest
 {
     public class FigureTest
     {

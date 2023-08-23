@@ -1,15 +1,16 @@
 ﻿using System;
 
-namespace figures 
+namespace Figures 
 {
     public struct Point
     {
-        public float x, y;
+        public float X { get; set; }
+        public float Y { get; set; }
 
         public Point(float x, float y)
         {
-            this.x = x;
-            this.y = y;
+            this.X = x;
+            this.Y = y;
         }
     }
 

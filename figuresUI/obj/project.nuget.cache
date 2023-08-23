@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EooCOrojm7im8FK5H8dgh47svg95wYKJxJdTCl5+4mx+a9zO8YNsx/pjUbAu0dfYdKwHYui60kWLqt5tVK2XhQ==",
+  "dgSpecHash": "CJjzrjcKSsPyG1Jaqc3fLKoVvbi2kCrUR4dBFZGtEzeRUXwd5ezLK1y+wC44vE7BEhYICAq6oVJK/eRBPUUbSQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Evgeny Nedelko\\Dev\\testapp\\figuresUI\\figuresUI.csproj",
+  "projectFilePath": "C:\\Users\\Evgeny Nedelko\\Source\\Repos\\testapp\\figuresUI\\FiguresUI.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -6,15 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v5.0": {
-      "figures/1.0.0": {
+      "Figures/1.0.0": {
         "runtime": {
-          "figures.dll": {}
+          "Figures.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "figures/1.0.0": {
+    "Figures/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,8 +1,8 @@
-﻿using figures;
+﻿using Figures;
 using System.Drawing;
 using System.Linq;
 
-namespace figuresUI
+namespace FiguresUI
 {
     public class Drawable
     {
