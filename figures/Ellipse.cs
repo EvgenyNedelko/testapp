@@ -37,6 +37,11 @@ namespace Figures
 
         public Ellipse(float radius1, float radius2)
         {
+            if(radius1 <= 0 || radius2 <= 0)
+            {
+                throw new ArgumentException("Отрицательный радиус, фигура задана не верно.");
+            }
+
             this._radius1 = radius1;
             this._radius2 = radius2;
         }
@@ -47,16 +52,5 @@ namespace Figures
         }
 
         public float CalculateArea() => _radius1 * _radius2 * MathF.PI;
-    }
-
-    public class IsValidEllipse : IFigureCondition<Ellipse>
-    {
-        public bool CheckCondition(Ellipse figure)
-        {
-            if (figure.Radius1 < 0 || figure.Radius2 < 0)
-                return false;
-            else 
-                return true;
-        }
     }
 }

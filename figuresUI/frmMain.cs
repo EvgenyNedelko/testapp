@@ -90,7 +90,7 @@ namespace FiguresUI
         {
             if (this._mode == Mode.Ellipse)
             {
-                this._current = new Drawable(new Ellipse(new figures.Point(e.X, e.Y), 0, 0), "Ellipse" + _objectIndex.ToString());
+                this._current = new Drawable(new Ellipse(new Figures.Point(e.X, e.Y), 0.1f, 0.1f), "Ellipse" + _objectIndex.ToString());
                 this._figures.Add(this._current);
                 this._mouseDown = true;
                 this._objectIndex++;

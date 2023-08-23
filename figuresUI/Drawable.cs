@@ -30,15 +30,15 @@ namespace FiguresUI
             if (_figure is Ellipse)
             {
                 var el = _figure as Ellipse;
-                g.DrawEllipse(pen, el.Origin.x - el.Radius1,
-                                   el.Origin.y - el.Radius2,
+                g.DrawEllipse(pen, el.Origin.X - el.Radius1,
+                                   el.Origin.Y - el.Radius2,
                                    el.Radius1 * 2,
                                    el.Radius2 * 2);
             }
             if (_figure is Polygon)
             {
                 var pol = _figure as Polygon;
-                var points = pol.Points.Select(p => new PointF(p.x, p.y)).ToArray();
+                var points = pol.Points.Select(p => new PointF(p.X, p.Y)).ToArray();
                 if (points.Length > 2)
                 {
                     g.DrawPolygon(pen, points);
@@ -49,7 +49,7 @@ namespace FiguresUI
                 }
                 foreach (var p in pol.Points)
                 {
-                    var rect = new Rectangle((int)(p.x - 1), (int)(p.y - 1), 2, 2);
+                    var rect = new Rectangle((int)(p.X - 1), (int)(p.Y - 1), 2, 2);
                     g.DrawRectangle(pen, rect);
                     g.FillRectangle(pen.Brush, rect);
                 }

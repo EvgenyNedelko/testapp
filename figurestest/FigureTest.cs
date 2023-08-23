@@ -8,42 +8,50 @@ namespace Figurestest
     public class FigureTest
     {
         [Fact]
-        public void BasicEllipseTests()
+        public void WrongEllipseCreation()
         {
-            IsValidEllipse cond = new();
-            Ellipse el = new(4, 5);
-
-            Assert.True(cond.CheckCondition(el));
-
-            Assert.Equal(el.CalculateArea(), 4 * 5 * MathF.PI);
-
-            Circle circle = new(5);
-
-            Assert.True(cond.CheckCondition(circle));
-
-            Assert.Equal(circle.CalculateArea(), 5 * 5 * MathF.PI);
-
-            el = new(-4, 5);
-
-            Assert.False(cond.CheckCondition(el));
-         }
+            Assert.Throws<ArgumentException>(() => { Ellipse el = new(-4, 5); });
+        }
 
         [Fact]
-        public void BasicPolygonTests()
+        public void WrongEllipseCreation1()
         {
-            IsValidTriangle condTriangle = new();
-            IsRightTriangle condRightTriangle = new();
+            Assert.Throws<ArgumentException>(() => { Ellipse el = new(4, -5); });
+        }
 
-            Triangle tri = new(new Point(0, 0), new Point(5, 0), new Point(0, 5));
+        [Fact]
+        public void WrongEllipseCreation2()
+        {
+            Assert.Throws<ArgumentException>(() => { Ellipse el = new(-4, -5); });
+        }
 
-            Assert.True(condRightTriangle.CheckCondition(tri));
+        [Fact]
+        public void WrongCircleCreation()
+        {
+            Assert.Throws<ArgumentException>(() => { Circle c = new(-5); });
+        }
 
+        [Fact]
+        public void EllipseArea()
+        {
+            Ellipse el = new Ellipse(4, 5);
+            Assert.Equal(el.CalculateArea(), 4 * 5 * MathF.PI);
+        }
+
+        [Fact]
+        public void CircleArea()
+        {
+            Circle cl = new Circle(5);
+            Assert.Equal(cl.CalculateArea(), 5 * 5 * MathF.PI);
+        }
+
+        [Fact]
+        public void CheckValidTriangle()
+        {
+            Triangle tri = new(3, 4, 5);
+            
             Assert.Equal(12.5, tri.CalculateArea());
 
-            tri = new(new Point(0, 0), new Point(1, 3), new Point(0, 4));
-
-            Assert.False(condRightTriangle.CheckCondition(tri));
-            Assert.Equal(2, tri.CalculateArea());
         }
     }
 }

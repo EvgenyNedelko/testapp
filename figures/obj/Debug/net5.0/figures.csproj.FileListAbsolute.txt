@@ -21,4 +21,3 @@ C:\Users\Evgeny Nedelko\Source\Repos\testapp\figures\obj\Debug\net5.0\Figures.cs
 C:\Users\Evgeny Nedelko\Source\Repos\testapp\figures\obj\Debug\net5.0\Figures.dll
 C:\Users\Evgeny Nedelko\Source\Repos\testapp\figures\obj\Debug\net5.0\ref\Figures.dll
 C:\Users\Evgeny Nedelko\Source\Repos\testapp\figures\obj\Debug\net5.0\Figures.pdb
-C:\Users\Evgeny Nedelko\Source\Repos\testapp\figures\obj\Debug\net5.0\Figures.csproj.AssemblyReference.cache

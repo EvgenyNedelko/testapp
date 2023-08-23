@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "FiguresUI/1.0.0": {
+        "dependencies": {
+          "Figures": "1.0.0"
+        },
+        "runtime": {
+          "FiguresUI.dll": {}
+        }
+      },
+      "Figures/1.0.0": {
+        "runtime": {
+          "Figures.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FiguresUI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Figures/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
